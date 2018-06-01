@@ -99,6 +99,6 @@
   },
   "dependencies": {
     "cachedir": "1.2.0",
-    "simple-bin-help": "1.7.0"
+    "simple-bin-help": "1.7.1"
   }
 }
