@@ -9,15 +9,38 @@
 [![standard][standard-image]][standard-url]
 [![renovate-app badge][renovate-badge]][renovate-app]
 
-## Install
+## Install and use
 
 Requires [Node](https://nodejs.org/en/) version 6 or above.
 
+### local
+
 ```sh
-npm install --save print-cachedir
+npm install --save-dev print-cachedir
+$(npm bin)/print-cachedir <module name>
 ```
 
-## Use
+### global
+
+```sh
+npm install -g print-cachedir
+print-cachedir <module name>
+```
+
+### one time using npx
+
+```sh
+npx print-cachedir <module name>
+```
+
+## Example
+
+Imagine we want to find out where [Cypress](https://www.cypress.io/) is caching its binary (using [cachedir][cachedir] module). Using npm@5+ we can see it on Mac (and other platforms)
+
+```sh
+npx print-cachedir Cypress
+/Users/gleb/Library/Caches/Cypress
+```
 
 ### Small print
 
@@ -67,3 +90,5 @@ OTHER DEALINGS IN THE SOFTWARE.
 [standard-url]: http://standardjs.com/
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
 [renovate-app]: https://renovateapp.com/
+
+[cachedir]: https://github.com/LinusU/node-cachedir
