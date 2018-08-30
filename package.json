@@ -95,7 +95,7 @@
     "prettier-standard": "8.0.1",
     "standard": "11.0.1",
     "semantic-release": "15.9.12",
-    "travis-deploy-once": "5.0.5"
+    "travis-deploy-once": "5.0.6"
   },
   "dependencies": {
     "cachedir": "1.3.0",
